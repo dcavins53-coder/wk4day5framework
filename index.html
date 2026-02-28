@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="shortcut icon"
+      href="https://placehold.co/100"
+      type="image/x-icon"
+    />
+    <script defer="app.js"></script>
+  </head>
+  <body>
+    <main>
+      <h1 class="text-2xl font-bold">Form Warmup</h1>
+      <form class="flex flex-col w-[500px] mx-auto gap-2" id="form">
+        <label for="nameInput"> Name </label>
+        <input
+          class="border[2px] invalid:text-pink-600 -indigo-600 rounded"
+          type="text"
+          name="nameInput"
+          id="nameInput"
+          placeholder="Deirdre"
+          required
+          minlength="2"
+        />
+
+        <label for="messageInput">Message</label>
+        <textarea
+          class="border[2px] rounded"
+          name="messageInput"
+          id="messageInput"
+          cols="30"
+          rows="10"
+        ></textarea>
+
+        <button class="border[2px] rounded w-[250px] mx-auto">Submit</button>
+      </form>
+      <p class="text-2xl" id="textOut"></p>
+    </main>
+  </body>
+</html>
